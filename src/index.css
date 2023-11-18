@@ -1,0 +1,76 @@
+*{
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.first, .second, .third, .fourth, .fifth{
+  position: relative;
+}
+
+@keyframes move {
+  from{top:-100px; opacity:0;}
+  to{top:0px; opacity: 1;}
+}
+
+@keyframes move2 {
+  from{top:-100px; opacity:0;}
+  to{top:200px; opacity: 1;}
+}
+
+@keyframes move3 {
+  from{top:100px; opacity:0;}
+  to{top:200px; opacity: 1;}
+}
+
+@keyframes move4 {
+  from{top:200px; opacity:0;}
+  to{top:300px; opacity: 1;}
+}
+
+@keyframes move5 {
+  from{top:300px; opacity:0;}
+  to{top:400px; opacity: 1;}
+}
+
+.first{
+  top:0px;
+  animation-name: move;
+  animation-duration: 1s;
+}
+
+.second{
+  top:-100px;
+  animation-name: move2;
+  animation-duration: 1s;
+animation-delay: 1s;
+}
+
+
+.third{
+  top:200px;
+  animation-name: move3;
+  animation-duration: 1s;
+  animation-delay: 2s;
+}
+
+.fourth{
+  top:300px;
+  animation-name: move4;
+  animation-duration: 1s;
+  animation-delay: 3s;
+}
+
+.fifth{
+  top:400px;
+  animation-name: move5;
+  animation-duration: 1s;
+  animation-delay: 4s;
+}
